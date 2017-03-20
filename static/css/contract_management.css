@@ -1,0 +1,93 @@
+/*通用css*/
+*{
+    box-sizing:border-box;
+}
+/*index_contract*/
+html{
+    height:100%;
+}
+body{
+    position:relative;
+    font-family:微软雅黑;
+    font-size:12px;
+    height:100%;
+    background: #fff url('../images/bg.png') center bottom no-repeat;
+}
+.wrapper{
+    width:1180px;
+    margin:0 auto;
+}
+/*header*/
+.header{
+    height: 28px;
+    line-height:28px;
+    background: #004985;
+    color:#7fa4c2;
+    font-family:宋体;
+}
+#login{
+    color: #ff7300;
+    padding-right: 5px;
+    font-family: Arial;
+}
+/*nav*/
+.nav{
+    background: #0069be;
+    height: 65px;
+    line-height: 65px;
+    box-shadow: 0 1px 0 #d9d9d9;
+}
+.logo{
+    background: url('../images/logo.png') 0 0 no-repeat;
+    width: 151px;
+    height: 35px;
+    margin-top: 15px;
+}
+.helper{
+    color: #7fb4de;
+    font-size: 16px;
+}
+.helper span{
+    background: url('../images/phone.png') 0 center no-repeat;
+    padding-left: 40px;
+    height: 32px;
+    line-height: 32px;
+    display: inline-block;
+    padding-right: 5px;
+}
+.helper a{
+    color: #7fb4de;
+    border-left:1px solid #408fce;
+    padding-left: 5px;
+}
+/*service*/
+.service{
+    position:fixed;
+    right:0;
+    top:45%;
+}
+.service>a{
+    display: block;
+    width: 70px;
+    height:90px;
+    margin-bottom: 2px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 62px;
+}
+.contactService{
+    background: #2c91ed url('../images/rlink.png') center 20px no-repeat;
+}
+.helpCenter{
+    background: #2c91ed url('../images/rhelp.png') center 20px no-repeat;
+}
+/*mian*/
+.main .wrapper>h2{
+    font-size: 35px;
+    color: #333;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 92px;
+    padding-bottom: 90px;
+}
