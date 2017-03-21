@@ -11,7 +11,9 @@ body{
     font-family:微软雅黑;
     font-size:12px;
     height:100%;
-    background: #fff url('../images/bg.png') center bottom no-repeat;
+    /*background: #fff url('../images/bg.png') center bottom no-repeat;*/
+    background:#f2f5f9;
+    min-width:1180px;
 }
 .wrapper{
     width:1180px;
@@ -30,12 +32,15 @@ body{
     padding-right: 5px;
     font-family: Arial;
 }
+#log_state{
+
+}
 /*nav*/
 .nav{
     background: #0069be;
     height: 65px;
     line-height: 65px;
-    box-shadow: 0 1px 0 #d9d9d9;
+    box-shadow: 0 4px 4px #d9d9d9;
 }
 .logo{
     background: url('../images/logo.png') 0 0 no-repeat;
@@ -83,11 +88,199 @@ body{
     background: #2c91ed url('../images/rhelp.png') center 20px no-repeat;
 }
 /*mian*/
-.main .wrapper>h2{
+.main .content_header{
+    border-bottom:1px solid #edf0f4;
+    margin-bottom:50px;
+}
+.main .content_header h2{
     font-size: 35px;
     color: #333;
     font-weight: normal;
     text-align: center;
     padding-top: 92px;
-    padding-bottom: 90px;
+    padding-bottom: 70px;
 }
+.main .content_header #tag{
+    width:540px;
+    margin:0 auto;
+    /*position:relative;*/
+    /*top:1px;*/
+    margin-bottom:-1px;
+}
+.main .content_header #tag li{
+    display:inline-block;
+    width:180px;
+    height:42px;
+    float:left;
+    text-align:center;
+    vertical-align:top;
+    font-size:20px;
+    cursor:pointer;
+}
+.main .content_header #tag li:hover, .main .content_header #tag li.tag_current{
+    border-bottom:2px solid #3399ff;
+    color:#3399ff;
+}
+.main .content_box{
+    width:1180px;
+    box-shadow:0 0 2px #edf0f4;
+    background:#FFF;
+    margin-bottom:100px;
+    padding:29px 24px 0 24px;
+    font-size:14px;
+}
+.content .content_title{
+    height:48px;
+    background:#f2f6fa;
+}
+.content .content_title .content_title_list{
+    overflow:hidden;
+}
+.content .content_title .content_title_list li{
+    height:48px;
+    text-align:center;
+    line-height:48px;
+    float:left;
+}
+.contract_no{
+    width:140px;
+}
+.contract_name{
+    width:172px;
+}
+.party_a{
+    width:232px;
+}
+.party_b{
+    width:180px;
+}
+.start_time {
+    width: 148px;
+}
+.status{
+    width:114px;
+}
+.operate{
+    width:143px;
+}
+
+.content .content_detail{
+    height:75px;
+    border-bottom:1px solid #f2f2f2;
+}
+.content .content_detail .content_detail_list{
+    overflow:hidden;
+}
+.content .content_detail .content_detail_list li{
+    height:75px;
+    line-height:75px;
+    float:left;
+    text-align:center;
+}
+.content_detail .contract_name{
+    color:#318cf5;
+}
+.content_detail .status_on{
+     color:#1bb974;
+}
+.content_detail .status_off{
+    color:#f37801;
+}
+
+.content_detail:hover, .content .detail_list_current{
+    background:#f2f6fa;
+}
+
+.content_detail .check_contract{
+    display:inline-block;
+    width:80px;
+    height:26px;
+    border-radius:1px;
+    background:#2c91ed;
+    color:#FFF;
+    margin:0 auto;
+    font-size:14px;
+    line-height:26px;
+    cursor:pointer;
+}
+.content_detail .check_contract:hover{
+    background:#56a7f1;
+}
+
+.content .content_pagination{
+    overflow:hidden;
+    height:69px;
+}
+.pagination{
+    padding:20px 12px;
+    overflow:hidden;
+    float:right;
+}
+.pagination li{
+    cursor:pointer;
+    border-radius:4px;
+    width:28px;
+    height:28px;
+    line-height:28px;
+    float:left;
+    margin-right:8px;
+    border:1px solid #d9d9d9;
+    text-align:center;
+}
+.pagination .pagination_prev a:after{
+    content:"\2039";
+    display:block;
+    height:28px;
+    width:28px;
+    text-align:center;
+    font-size:14px;
+    line-height:26px;
+}
+.pagination .pagination_jump_next a:after{
+    content:"\2022\2022\2022";
+    display:block;
+    height:28px;
+    width:28px;
+    text-align:center;
+    opacity:0.5;
+    font-size:12px;
+    line-height:26px;
+}
+.pagination .pagination_next a:after{
+    content:"\203A";
+    display:block;
+    height:28px;
+    width:28px;
+    text-align:center;
+    font-size:14px;
+    line-height:26px;
+}
+.pagination .pagination_quick_jump{
+    position:relative;
+    float:left;
+    border:0 none;
+    height:28px;
+    line-height:28px;
+    width:100px;
+    vertical-align:top;
+    text-align:left;
+}
+.pagination .pagination_quick_jump input{
+    display:inline-block;
+    height:28px;
+    width:50px;
+    margin:0 8px;
+    border:1px solid #d9d9d9;
+    padding-left:7px;
+    border-radius:4px;
+    color:#666;
+}
+
+
+
+
+
+
+
+
+
