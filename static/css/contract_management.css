@@ -150,6 +150,15 @@ body{
     line-height:48px;
     float:left;
 }
+.contract_no,
+.contract_name,
+.party_a,
+.party_b{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
 .contract_no{
     width:140px;
 }
